@@ -3,5 +3,9 @@
         "psr-4": {
             "Codechief\\": "app/Codechief"
         }
+    },
+    "require": {
+        "google/protobuf": "^3.17",
+        "grpc/grpc": "^1.42"
     }
 }
