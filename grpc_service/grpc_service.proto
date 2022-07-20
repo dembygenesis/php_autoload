@@ -2,8 +2,9 @@ syntax = "proto3";
 // option go_package = "github.com/dembygenesis/go-grpc/grpc-service";
 option php_namespace = "Codechief\\GRPC";
 option php_metadata_namespace = "Codechief\\GRPC";
+option php_class_prefix = "";
 
-// package GRPC;
+package grpcservice;
 
 service ChatService {
   rpc SayHello(Message) returns (Message) {}
