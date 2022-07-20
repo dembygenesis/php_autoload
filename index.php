@@ -10,11 +10,9 @@ echo $filter->GetDataFromUserClass(new User());*/
 // Try here
 // $grpcService = new \Codechief\GRPC\ChatServiceClient("localhost:9000", []);
 try {
-    $credentials = \Grpc\ChannelCredentials::createInsecure();
-
     $grpcService = new \Codechief\GRPC\ChatServiceClient(
-        "localhost:9000",
-        ['credentials' => $credentials]
+        "localhost:8888",
+        ['credentials' => \Grpc\ChannelCredentials::createInsecure()]
     );
 
     /**
