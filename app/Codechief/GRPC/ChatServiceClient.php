@@ -4,8 +4,6 @@
 namespace Codechief\GRPC;
 
 /**
- * package GRPC;
- *
  */
 class ChatServiceClient extends \Grpc\BaseStub {
 
@@ -25,7 +23,6 @@ class ChatServiceClient extends \Grpc\BaseStub {
      */
     public function SayHello(\Codechief\GRPC\Message $argument,
       $metadata = [], $options = []) {
-        // return $this->_simpleRequest('/ChatService/SayHello',
         return $this->_simpleRequest('/grpcservice.ChatService/SayHello',
         $argument,
         ['\Codechief\GRPC\Message', 'decode'],
